@@ -2,10 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "dev.atharvakulkarni.e_commerce"
+        applicationId "com.example.e_commerce"
         minSdkVersion 28
         targetSdkVersion 30
         versionCode 1

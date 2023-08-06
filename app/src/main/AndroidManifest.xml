@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.atharvakulkarni.e_commerce">
+    package="com.example.e_commerce">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,38 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.MainActivity">
-
-        </activity>
-        <activity android:name=".view.search_result"/>
-        <activity android:name=".view.CartActivity">
-
-
-
-
-        </activity>
-        <activity android:name=".view.show_product">
-
-
-        </activity>
-
-
-        <activity android:name=".view.sigin_signup">
+        <activity
+            android:name="com.example.e_commerce.view.all_categories"
+            android:exported="false" />
+        <activity android:name="com.example.e_commerce.view.MainActivity"></activity>
+        <activity android:name="com.example.e_commerce.view.search_result" />
+        <activity android:name="com.example.e_commerce.view.CartActivity"></activity>
+        <activity android:name="com.example.e_commerce.view.show_product"></activity>
+        <activity android:name="com.example.e_commerce.view.sigin_signup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".view.order_placing">
-
-
-        </activity>
-        <activity android:name=".view.AllCategoryActivity"/>
-        <activity android:name=".view.MyOrdersActivity"/>
-        <activity android:name=".view.OrderDetailsActivity"/>
-
+        <activity android:name="com.example.e_commerce.view.order_placing"></activity>
+        <activity android:name="com.example.e_commerce.view.AllCategoryActivity" />
+        <activity android:name="com.example.e_commerce.view.MyOrdersActivity" />
+        <activity android:name="com.example.e_commerce.view.OrderDetailsActivity" />
     </application>
 
 </manifest>
